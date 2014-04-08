@@ -26,8 +26,6 @@ public class Writer extends Thread {
 				String s = scan.nextLine();
 				pw.println(s);
 				pw.flush();
-//				out.write(s.getBytes());
-//				out.flush();
 			}
 			scan.close();
 		}catch(Exception e) {

@@ -6,8 +6,7 @@ public class NameWriter extends Thread {
 	}
 	
 	public void run() {
-		for (int i = 0;i<5;i++) {
-			
+		for (int i = 0;i<5;i++) {		
 			try {
 				double r = Math.random()*1000;
 				Thread.sleep((long) r);

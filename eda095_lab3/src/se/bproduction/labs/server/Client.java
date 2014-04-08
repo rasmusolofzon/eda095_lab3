@@ -33,9 +33,9 @@ public class Client extends Thread {
 			BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 			String incoming = null;
 			while ((incoming=br.readLine())!=null) {
-				if (incoming.startsWith("E:")) {
+				if (incoming.toUpperCase().startsWith("E:")) {
 					send("ECHO: " + incoming);
-				}else if (incoming.startsWith("Q:")) {
+				}else if (incoming.toUpperCase().startsWith("Q:")) {
 					send("Goodbye!");
 					break;
 //				}else if (incoming.startsWith("M:")) { //Removed this in order to test a bit easier!
